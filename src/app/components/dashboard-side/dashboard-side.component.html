@@ -1,0 +1,88 @@
+
+<app-header></app-header>
+
+<!----------------------------->
+
+<div class="container-fluid">
+
+<!----------------- Left Side ---------------------------------------------------------->
+    <div class="row">
+      <nav class="col-sm-4 col-md-3 col-lg-2  d-sm-block right_side sidebar" #sidebar id="right_side">
+       
+        <ul class="nav nav-pills flex-column" style="padding:  10px;">
+            <li routerLinkActive="active" [routerLink]="['/dashboard']">  
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6.5C3 3.87479 3.02811 3 6.5 3C9.97189 3 10 3.87479 10 6.5C10 9.12521 10.0111 10 6.5 10C2.98893 10 3 9.12521 3 6.5Z" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 6.5C14 3.87479 14.0281 3 17.5 3C20.9719 3 21 3.87479 21 6.5C21 9.12521 21.0111 10 17.5 10C13.9889 10 14 9.12521 14 6.5Z" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 17.5C3 14.8748 3.02811 14 6.5 14C9.97189 14 10 14.8748 10 17.5C10 20.1252 10.0111 21 6.5 21C2.98893 21 3 20.1252 3 17.5Z" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 17.5C14 14.8748 14.0281 14 17.5 14C20.9719 14 21 14.8748 21 17.5C21 20.1252 21.0111 21 17.5 21C13.9889 21 14 20.1252 14 17.5Z" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Dashboard</li>
+         
+          <mat-accordion routerLinkActive="active" [routerLink]="['/allCourses']">
+            <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7379 2.76175H8.08493C6.00493 2.75375 4.29993 4.41175 4.25093 6.49075V17.2037C4.20493 19.3167 5.87993 21.0677 7.99293 21.1147C8.02393 21.1147 8.05393 21.1157 8.08493 21.1147H16.0739C18.1679 21.0297 19.8179 19.2997 19.8029 17.2037V8.03775L14.7379 2.76175Z" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.4751 2.75V5.659C14.4751 7.079 15.6231 8.23 17.0431 8.234H19.7981" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.2882 15.3584H8.88818" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.2432 11.6064H8.88721" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                 Courses
+                  
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+             <!-----Stepper---->
+                   
+             <ul>
+              <li routerLinkActive="active" [routerLink]="['/allCourses']">All Courses</li>
+              <li>Add Course</li>
+              <li>Edit Course</li>
+              <li>About Course</li>
+            </ul>
+             
+             <!-----End Stepper ----->
+            </mat-expansion-panel>
+          </mat-accordion>
+
+      
+
+          <mat-accordion>
+            <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header>
+            <mat-panel-title routerLinkActive="active" [routerLink]="['/allStudent']">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 15.3457C8.11731 15.3457 4.81445 15.9305 4.81445 18.2724C4.81445 20.6143 8.09636 21.22 11.9849 21.22C15.8525 21.22 19.1545 20.6343 19.1545 18.2933C19.1545 15.9524 15.8735 15.3457 11.9849 15.3457Z" stroke="#4A4A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 12.0059C14.523 12.0059 16.5801 9.94779 16.5801 7.40969C16.5801 4.8716 14.523 2.81445 11.9849 2.81445C9.44679 2.81445 7.3887 4.8716 7.3887 7.40969C7.38013 9.93922 9.42394 11.9973 11.9525 12.0059H11.9849Z" stroke="#4A4A4A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                 Students 
+                  
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+                   <!-----Stepper---->
+                   
+                   <ul>
+                    <li routerLinkActive="active" [routerLink]="['/allStudent']">All Student</li>
+                    <li  routerLinkActive="active" [routerLink]="['/editStudent']">Edit Student</li>
+                  </ul>
+                   
+                   <!-----End Stepper ----->
+            </mat-expansion-panel>
+          </mat-accordion>
+          </ul>
+      </nav>
+  
+<!------------------ Right Side ------------------------------------------------------->
+      <main role="main" class="col-sm-8 ml-sm-auto col-md-9 col-lg-10 pt-3 main ">
+        <h1 (click)="openSidebar()"
+        class="text-left display-3 font-weight-bold close_btn"
+        style="color: #e5533a; margin-top: 20px ; cursor: pointer;"
+      >
+      <i class="fas fa-times"></i>
+      </h1>
+            <router-outlet></router-outlet>
+        
+      </main>
+    </div>
+  </div>

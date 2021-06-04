@@ -1,0 +1,148 @@
+.icons_container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.icons_container div{ 
+    width: 255px;
+    border:1px solid white;
+    padding: 12px 5px 5px 5px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 30px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+
+.d-flex .first , .d-flex .third{
+   width: 10%;  
+   height: auto;
+   background-color: none;
+}
+
+.d-flex .third{
+    margin-left: -5px;
+    cursor: pointer;
+}
+.d-flex .second{
+    height: auto;
+    
+}
+
+
+mat-progress-bar{
+    width: 137px;
+    height: 4px;
+    display: block;
+
+}
+@media(max-width:575px)
+{
+    .icons_container{
+        flex-direction: column;
+    }
+ 
+    .container-fluid
+    {
+        margin-top: 15%;
+    }
+    
+}
+
+
+@media(max-width:850px)
+{
+    .icons_container{
+        flex-direction: column;
+    }
+   
+     .container-fluid
+     {
+         margin-top: 10%;
+     }
+}
+@media(max-width:1000px)
+{
+.icons_container{
+    flex-wrap: wrap;
+}
+
+}
+@media(max-width:1150px)
+{
+    .container-fluid
+    {
+        margin-top: 6%;
+    }
+}
+
+
+/*********** End right Side ******************************************************/
+
+/************* table ********************************************************/
+
+.recenTransaction{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.table{
+    padding-left: 20px;
+}
+.table div{
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 21px;
+    width: 20%;
+}
+
+.table-data{
+    padding-left: 20px;
+    height: 48px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.table-data div{
+    width: 20%;
+}
+
+.heading{
+    color: palevioletred;
+    font-weight: bold;
+    margin-right: 15px;
+    display: none;
+}
+
+
+@media (max-width:1120px) {
+    .table-data div{
+        width: 300px;
+       margin-bottom: 10px;
+    }
+    .table-data{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+   h3{
+       margin-top: 20px;
+   }
+   .table{
+       display: none !important;
+   }
+
+   .heading{
+    display: inline-block;
+}
+}

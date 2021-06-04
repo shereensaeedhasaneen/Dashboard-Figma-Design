@@ -1,0 +1,44 @@
+/********************* header **********************/
+.icons svg , .icons img{
+    margin-right: 20px;  
+ }
+ 
+ .icons svg:hover , .icons img:hover{
+   cursor: pointer;
+   opacity: 0.5;
+  }
+ 
+ .navbar-nav {
+   display: flex;
+   justify-content: center;
+   width: 80%;
+ }
+ 
+ .navbar-nav form {
+   span{
+     position: absolute;
+     padding-left: 20px;
+     height: 25px;
+     display: flex;
+     align-items: center;
+   }
+   input{
+     padding-left: 55px;
+     border-radius: 50px;
+     width: 220px;
+   
+   }
+ }
+ 
+ .navbar-brand{
+   color: black !important;
+   font-size: 27px !important;
+  
+   font-weight: bold;
+   span{
+     color: blue;
+   }
+  
+ }
+
+ 

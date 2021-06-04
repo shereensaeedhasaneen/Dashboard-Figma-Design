@@ -1,0 +1,48 @@
+h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h4{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*************************************************/
+
+.data_container div{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.data_container div input , .data_container div select{
+    width: 255px;
+    height: 48px;
+    background-color: white;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+
+@media (min-width:573px) and (max-width:1120px) {
+    h3{
+        margin-top: 30px;
+    }
+}
+
+button{
+    width: 133px;
+    height: 48px;
+    border-radius: 15px;
+    background-color: #0F4ABD;
+    color: white;
+    border: none;
+}

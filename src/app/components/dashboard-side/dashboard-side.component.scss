@@ -1,0 +1,186 @@
+
+  /*********** start Left side *************************************/
+  
+  .right_side {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .right_side ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .right_side ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  .right_side ul li a {
+    text-decoration: none;
+  }
+  
+  .active {
+   color: #5A82D2;
+      mat-panel-title{
+        color: #5A82D2;
+      }
+
+      mat-accordion ul li{
+        color: #5A82D2;
+       
+      }
+
+  }
+  li:hover {
+   cursor: pointer;
+  }
+  .right_side a {
+    color: black;
+    font-size: 27px;
+  }
+  .right_side .fas {
+    margin-right: 5px;
+    color: black;
+    font-size: 22px;
+  }
+  /*********** End Left Side **************************************/
+  
+  /*********** Start right Side ******************************************************/
+  
+  /*.right{
+     width:100%;
+  }*/
+  
+  .sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top: 1px solid #000;
+    width: 250px;
+  }
+  
+  .sidebar .nav-item {
+    width: 100%;
+  }
+  
+  .main{
+    margin-top:4%;
+  }
+
+  .close_btn{
+    display: none;
+  }
+
+  @media (max-width:572px) {
+    .right_side{
+      display: none;
+    }
+    
+    .close_btn{
+      display: block;
+    }
+  }
+  /*@media (min-width: 250px) {
+    .ml-sm-auto,
+    .mx-sm-auto {
+      margin-left: auto !important;
+    }
+  }
+  
+  @media (max-width: 920px) {
+    .right_side ul li a {
+      display: none;
+    }
+    .sidebar {
+      width: 50px !important;
+      top: 30px;
+    }
+    .sidebar img,
+    .sidebar h3 {
+      display: none;
+    }
+     .main{
+         padding-left: 25px !important;
+     }
+  }
+  
+  @media(min-width:576px) and (max-width:777px){
+    .main{
+      margin-left: 70px !important;
+    }
+  }
+  @media (min-width: 921px) and (max-width: 1290px) {
+    .right_side ul li a {
+      font-size: 18px !important;
+    }
+    h3 {
+      font-size: 20px;
+      margin-left: 14px !important;
+    }
+    .fas {
+      font-size: 15px !important;
+    }
+  }
+
+  @media (max-width:1000px)  {
+    .main{
+      margin-top: 10% ;
+    }
+  }*/
+
+  
+
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  mat-accordion svg{
+    margin-right: 5px;
+  }
+ 
+  mat-panel-title{
+   font-size: 20px;
+   margin-top: 10px;
+  }
+
+/************************** progressbar Stepper *///////////////////////////
+
+mat-accordion ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+  position: relative;
+  &:before{
+      content:"";
+      display: inline-block;
+      width: 2px;
+      background: rgb(216, 213, 213);
+      position: absolute;
+      left:31px;
+      top:5px;
+      height: calc(100% - 10px );
+  }
+  li{
+    position: relative;
+    padding-left: 18px;
+    margin-bottom:15px;
+    &:before{
+      content:"";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border:1px solid rgb(216, 213, 213);
+      background-color: rgb(216, 213, 213);
+      position: absolute; background-color: none;
+      left:0;
+      top:5px;
+      border-radius: 10px;
+    }
+  }
+}

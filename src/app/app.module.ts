@@ -14,6 +14,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { AllStudentsComponent } from './components/all-students/all-students.component';
 import { EditStudentComponent } from './components/edit-student/edit-student.component';
 import { AllCoursesComponent } from './components/all-courses/all-courses.component';
+import { EditCourseComponent } from './components/edit-course/edit-course.component';
+import { AddCourseComponent } from './components/add-course/add-course.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AllCoursesComponent } from './components/all-courses/all-courses.compon
     HeaderComponent,
     AllStudentsComponent,
     EditStudentComponent,
-    AllCoursesComponent
+    AllCoursesComponent,
+    EditCourseComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,

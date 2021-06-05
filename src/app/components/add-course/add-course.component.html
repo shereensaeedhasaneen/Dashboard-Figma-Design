@@ -1,0 +1,232 @@
+<div class="container-fluid">
+    
+    <h3>Add Course</h3>
+    <h4>Detail Course</h4>
+    <br>
+
+<!-------------------- input Fields------------------------------------------->
+    <div class="d-flex flex-wrap data_container">
+
+        <div class="d-flex flex-column">
+            <p>Course Name</p>
+            <input class="form-control" type="text" value="UIUX Design For Beginner">
+        </div>
+
+        <div class="d-flex flex-column">
+            <p>Course Category</p>
+            <select class="form-control">
+                <option>Design</option>
+              </select>
+        </div>
+
+
+        <div class="d-flex flex-column">
+            <p>Instructure</p>
+            <input class="form-control" type="text" value="Raja Zulham, s.Kam">
+        </div>
+
+        <div class="d-flex flex-column">
+            <p>Course Price</p>
+            <input class="form-control" type="text" value="$ | 299">
+        </div>
+
+        <div class="d-flex flex-column">
+            <p>Course Create</p>
+            <select class="form-control">
+                <option>27,May 2021</option>
+              </select>
+        </div>
+
+        <div class="d-flex flex-column">
+            <p>Course Begin</p>
+            <select class="form-control">
+                <option>27,April 2021</option>
+              </select>
+        </div>
+<!-------------------- End input Fields------------------------------------------->
+
+<!-------------  Description Section ---------------------------------->
+
+        <div class="d-flex flex-column description">
+            <p>Course Description</p>
+            <textarea name="Text1" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, ipsum id consequat pretium enim tincidunt sit. Gravida diam aliquam quis est tincidunt auctor massa mauris mattis. Morbi interdum consequat et id suspendisse rhoncus. At molestie etiam bibendum ornare tellus. Iaculis tortor mauris massa nulla in.
+                adipiscing elit. Justo, ipsum id consequat pretium enim tincidunt sit. Gravida diam aliquam quis est tincidunt auctor massa mauris mattis. Morbi interdum consequat et id suspendisse rhoncus. At molestie etiam bibendum ornare tellus. Iaculis tortor mauris massa nulla in.</textarea>
+           
+            
+        </div>
+ <!------------- End Description Section ---------------------------------->
+
+<!-------------  Upload Photo Section ---------------------------------->
+
+        <div class="d-flex flex-column coursePhoto">
+            <p>Add Photo</p>
+            <img src="assets/study.jpg" width="160" height="107">
+           
+           <p class="pt-2"> <input type="file" ></p> <!--because P is block element-->
+            <div class="d-flex" >
+                <button class="mr-3 save_btn">Save Photo</button>
+                <button class="delete_btn btn">Delete Photo</button>
+            </div>
+        </div>
+<!------------- End Upload Photo Section ---------------------------------->
+
+<!--------------   Lesson Section ------------------------------------->
+
+        <div class="d-flex flex-column description font-weight-bold" style="height: auto;">
+            <div style="width: 100%; height: auto; margin-bottom: 0;">
+                <p class="float-left">Lesson Section</p>
+                
+                 <p  class="float-right pr-3" style="cursor: pointer;">+</p>
+             </div>
+
+            <div class="buttons">
+               <p class="float-left">User Research</p>
+               
+                <p  class="float-right pr-3 font-weight-normal">50 min</p>
+            </div>
+
+
+            <div class="buttons">
+                <p class="float-left">User Research</p>
+                
+                 <p  class="float-right pr-3 font-weight-normal">50 min</p>
+             </div>
+
+             <div class="buttons">
+                <p class="float-left">User Research</p>
+                
+                 <p  class="float-right pr-3 font-weight-normal">50 min</p>
+             </div>
+
+        </div>
+<!--------------  End Lesson Section ------------------------------------->
+
+<!--------------  Edit & Delete Section ------------------------------->
+
+        <div class="d-flex flex-column coursePhoto font-weight-bold">
+            <p>Action</p>
+                <div class="buttons">
+                    <button class="edit"> 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.68184 2.96251L13.0375 6.31816L4.71227 14.6434C4.63377 14.7219 4.53023 14.7704 4.41967 14.7804L0.517574 15.998C0.222428 16.0248 -0.0248342 15.7776 0.0019973 15.4824L1.21957 11.5803C1.22962 11.4698 1.27812 11.3662 1.35662 11.2877L9.68184 2.96251Z" fill="#4A4A4A"/>
+                        <path d="M12.3664 0.277991C12.737 -0.0926638 13.338 -0.0926638 13.7086 0.277991L15.722 2.29138C16.0927 2.66204 16.0927 3.26299 15.722 3.63364L14.3797 4.97591L11.0241 1.62025L12.3664 0.277991Z" fill="#4A4A4A"/>
+                        </svg>
+                        Edit
+                    </button>
+                   
+                    <button class="text-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 17V7H4V17C4 18.1046 4.89543 19 6 19H14C15.1046 19 16 18.1046 16 17Z" fill="#FF7272"/>
+                            <path d="M7.44721 1.10557L6.5 3H2V5H18V3H13.5L12.5528 1.10557C12.214 0.428004 11.5215 0 10.7639 0H9.23607C8.47852 0 7.786 0.428005 7.44721 1.10557Z" fill="#FF7272"/>
+                        </svg>  
+                        Delete
+                    </button>
+                </div>
+
+
+
+                <div class="buttons">
+                    <button class="edit"> 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.68184 2.96251L13.0375 6.31816L4.71227 14.6434C4.63377 14.7219 4.53023 14.7704 4.41967 14.7804L0.517574 15.998C0.222428 16.0248 -0.0248342 15.7776 0.0019973 15.4824L1.21957 11.5803C1.22962 11.4698 1.27812 11.3662 1.35662 11.2877L9.68184 2.96251Z" fill="#4A4A4A"/>
+                        <path d="M12.3664 0.277991C12.737 -0.0926638 13.338 -0.0926638 13.7086 0.277991L15.722 2.29138C16.0927 2.66204 16.0927 3.26299 15.722 3.63364L14.3797 4.97591L11.0241 1.62025L12.3664 0.277991Z" fill="#4A4A4A"/>
+                        </svg>
+                        Edit
+                    </button>
+                   
+                    <button class="text-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 17V7H4V17C4 18.1046 4.89543 19 6 19H14C15.1046 19 16 18.1046 16 17Z" fill="#FF7272"/>
+                            <path d="M7.44721 1.10557L6.5 3H2V5H18V3H13.5L12.5528 1.10557C12.214 0.428004 11.5215 0 10.7639 0H9.23607C8.47852 0 7.786 0.428005 7.44721 1.10557Z" fill="#FF7272"/>
+                        </svg>  
+                        Delete
+                    </button>
+                </div>
+
+
+
+
+                <div class="buttons">
+                    <button class="edit"> 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.68184 2.96251L13.0375 6.31816L4.71227 14.6434C4.63377 14.7219 4.53023 14.7704 4.41967 14.7804L0.517574 15.998C0.222428 16.0248 -0.0248342 15.7776 0.0019973 15.4824L1.21957 11.5803C1.22962 11.4698 1.27812 11.3662 1.35662 11.2877L9.68184 2.96251Z" fill="#4A4A4A"/>
+                        <path d="M12.3664 0.277991C12.737 -0.0926638 13.338 -0.0926638 13.7086 0.277991L15.722 2.29138C16.0927 2.66204 16.0927 3.26299 15.722 3.63364L14.3797 4.97591L11.0241 1.62025L12.3664 0.277991Z" fill="#4A4A4A"/>
+                        </svg>
+                        Edit
+                    </button>
+                   
+                    <button class="text-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 17V7H4V17C4 18.1046 4.89543 19 6 19H14C15.1046 19 16 18.1046 16 17Z" fill="#FF7272"/>
+                            <path d="M7.44721 1.10557L6.5 3H2V5H18V3H13.5L12.5528 1.10557C12.214 0.428004 11.5215 0 10.7639 0H9.23607C8.47852 0 7.786 0.428005 7.44721 1.10557Z" fill="#FF7272"/>
+                        </svg>  
+                        Delete
+                    </button>
+                </div>
+<!-------------- end Edit & Delete Section ------------------------------->
+
+        </div>
+    </div>
+
+    
+
+
+<!--------------- Post & Cancel Section -------------------------------------------------------->
+
+
+    <div class="d-flex" >
+        <button class="mr-3 save_btn">Post Course</button>
+        <button class="delete_btn btn">Cancel</button>
+    </div>
+
+<!--------------- End Post & Cancel Section -------------------------------------------------------->
+
+   <br>
+ <hr>
+
+ <!----------------------------------------------------------------->
+
+    <h2>Add Lesson</h2>
+    <h4>lesson Title</h4>
+
+    <input class="form-control lessonTitle" type="text" value="User Research">
+    <br>
+
+    <div class="row">
+        
+        <div class="col-sm-6 col-md-4">
+            <p>Lesson Subtitle</p>
+            <input type="text" value="Introduction">
+            <input type="text" value="Emphasize">
+            <input type="text" value="Problem Solving">
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <p>Fiels</p>
+            <select class="form-control">
+                <option>27,April 2021</option>
+            </select>
+
+            <select class="form-control">
+                <option>27,April 2021</option>
+            </select>
+
+            <select class="form-control">
+            <option>27,April 2021</option>
+            </select>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <p>Link Address</p>
+            <input type="text" value="Empty">
+            <input type="text" value="Empty">
+            <input type="text" value="Empty">
+        </div>
+    </div>
+
+
+ <!---------------------end ----------------------------------------->
+    <br>
+    <button class="delete_btn btn">Save Lesson</button>
+    <br><br>
+</div>
